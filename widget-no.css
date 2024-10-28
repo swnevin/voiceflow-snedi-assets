@@ -13,6 +13,11 @@
 .vfrc-widget--chat {
   border-radius: 20px;
 }
+
+.vfrc-button--thumbs-up {
+    size: 50%;
+    background-color: #434242;
+}
     
 .vfrc-button--secondary {
     border-radius: 10px;
@@ -141,4 +146,24 @@ footer button.vfrc-button--primary[label="End Chat"]::after {
 footer button.vfrc-button--primary[label=Cancel]::after {
   content: "Avbryt";
   color: rgba(0, 0, 0, 0.9);
+}
+
+.vfrc-proactive-message {
+    background-color: #eea4db;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 0px;
+    font-weight: 500;
+    font-size: 14.5px;
+}
+
+.vfrc-proactive-close {
+    background-color: var(--button-fill);
+    border: solid 1.6px var(--button-border);
+}
+
+.vfrc-proactive-close:hover {
+    background-color: var(--system-message);
+    border: solid 1.6px var(--header-gradient-end);
 }
