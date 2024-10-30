@@ -69,11 +69,6 @@
     border-bottom-right-radius: 0px; 
 }
 
-.vfrc-footer {
-    border-radius: 0px;
-    border-top: solid 1.6px var(--border-color-dark);
-    background-color: var(--system-message);
-}
 .vfrc-header {
     background: linear-gradient(to right, var(--header-gradient-start) 40%, var(--header-gradient-end));
 }
@@ -149,7 +144,6 @@ footer button.vfrc-button--primary[label=Cancel]::after {
 }
 
 .vfrc-proactive-message {
-    background-color: #eea4db;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px; 
