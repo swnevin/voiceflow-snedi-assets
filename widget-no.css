@@ -120,12 +120,12 @@ footer button.vfrc-button--primary[label=Cancel]::after {
 }
 
 .vfrc-chat-input textarea:-moz-placeholder-shown {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='roboto' font-size='15'>Melding...</text></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='roboto' font-size='15'>Send melding...</text></svg>");
   background-repeat: no-repeat;
 }
 
 .vfrc-chat-input textarea:placeholder-shown {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='roboto' font-size='15'>Melding...</text></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='roboto' font-size='15'>Send melding...</text></svg>");
   background-repeat: no-repeat;
 }
 
