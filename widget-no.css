@@ -213,6 +213,8 @@ footer button.vfrc-button--primary[label=Cancel]::after {
 .vfrc-proactive .vfrc-proactive-close { 
   opacity: 1;
   transform: translateY(15px);
+  height: 24px;
+  width: 24px;
 }
 
 .vfrc-proactive-close:hover {
