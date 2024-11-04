@@ -119,8 +119,8 @@
 
 .vfrc-chat-input textarea {
   background-image: none;
-  padding-top: 10px;
-  paddig-bottom: 10px;
+  padding-top: 11px;
+  paddig-bottom: 8px;
 }
 
 .vfrc-chat-input textarea::-moz-placeholder {
