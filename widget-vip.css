@@ -1,0 +1,234 @@
+:host {
+    --border-color-dark: #002677;
+    --border-color-light: #7b9eea;
+    --text-color-secondary: #434242;
+    --background-color-light: #f2f6ff;
+    --background-color-medium: #002677;
+    --header-gradient-start: #002677;
+    --header-gradient-middle: #153e98;
+    --header-gradient-end: #01184a;
+    --button-border: #002677;
+    --button-fill: #f4f7ff;
+    --system-message: #f0f0f0;
+    --background-color-white: #ffffff;
+}
+
+/*Generelle stiler:*/
+.vfrc-widget--chat {
+    border-radius: 20px;
+    border: 0.5px solid var(--border-color-light);
+}
+
+.vfrc-header {
+    background: linear-gradient(to right, var(--header-gradient-start) 40%, var(--header-gradient-end));
+}
+
+.vfrc-footer { 
+    border-radius: 0px;
+    border-top: 0.5px solid var(--border-color-light);
+    background: linear-gradient(to right, var(--header-gradient-start) 40%, var(--header-gradient-middle));
+}
+
+/* Tekst og farge */
+.vfrc-assistant-info--title {
+  color: var(--border-color-dark);
+}
+
+.vfrc-assistant-info--description {
+  color: var(--text-color-secondary);
+}
+
+.vfrc-chat--session-time,
+.vfrc-chat--status::placeholder {
+  background-image: none;
+  color: transparent;
+}
+
+.vfrc-chat--session-time,
+.vfrc-chat--status {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='60' y='30' fill='%23434242' font-family='Arial' font-size='13'>$nedi</text></svg>");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+/* Knappestiler */
+.vfrc-button--thumbs-up {
+  size: 50%;
+  background-color: var(--text-color-secondary);
+}
+
+.vfrc-button--secondary {
+  border-radius: 10px;
+  border: 1.6px solid var(--button-border);
+  font-weight: 200;
+  background-color: var(--button-fill);
+}
+
+.vfrc-button--secondary:hover {
+  border-radius: 10px;
+  border: 1.6px solid var(--header-gradient-end);
+  font-weight: 200;
+  background-color: var(--system-message);
+}
+
+.vfrc-button--primary[label="End Chat"],
+.vfrc-button--primary[label="Cancel"] {
+  border-radius: 10px;
+  color: var(--text-color-secondary);
+  border: 1.6px solid var(--text-color-secondary);
+  font-family: 'Roboto', sans-serif;
+}
+
+.vfrc-button--primary[label="End Chat"] {
+  background-color: var(--button-border);
+}
+
+.vfrc-button--primary[label="Cancel"] {
+  background-color: var(--background-color-light);
+}
+
+
+.vfrc-prompt {
+  border: 1.6px solid var(--border-color-dark);
+}
+
+/* Tekstbobler */
+.vfrc-system-response .vfrc-message {
+  background-color: var(--system-message);
+  color: var(--text-color-secondary);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 0px; 
+  border-bottom-right-radius: 15px;
+}
+
+.vfrc-user-response .vfrc-message {
+  background-color: var(--background-color-medium);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 0px; 
+}
+
+/* Chat inndatafelt */
+.vfrc-chat-input {
+  border: 0.5px solid var(--border-color-light);
+  border-radius: 15.5px;
+}
+
+.vfrc-chat-input textarea {
+  background-image: none;
+}
+
+.vfrc-chat-input textarea::-moz-placeholder {
+  color: transparent;
+}
+
+.vfrc-chat-input textarea::placeholder {
+  color: transparent;
+}
+
+.vfrc-chat-input textarea:-moz-placeholder-shown { 
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='%237b9eea' font-family='Arial' font-size='15'>Send melding...</text></svg>");
+  background-repeat: no-repeat;
+}
+
+.vfrc-chat-input textarea:placeholder-shown {
+  background-image: 
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='40px' width='500px'><text x='42' y='26.5' fill='%237b9eea' font-family='Arial' font-size='15'>Send melding...</text></svg>"),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='40' height='35' fill='%237b9eea'><path d='M17.659,3.681H8.468c-0.211,0-0.383,0.172-0.383,0.383v2.681H2.341c-0.21,0-0.383,0.172-0.383,0.383v6.126c0,0.211,0.172,0.383,0.383,0.383h1.532v2.298c0,0.566,0.554,0.368,0.653,0.27l2.569-2.567h4.437c0.21,0,0.383-0.172,0.383-0.383v-2.681h1.013l2.546,2.567c0.242,0.249,0.652,0.065,0.652-0.27v-2.298h1.533c0.211,0,0.383-0.172,0.383-0.382V4.063C18.042,3.853,17.87,3.681,17.659,3.681 M11.148,12.87H6.937c-0.102,0-0.199,0.04-0.27,0.113l-2.028,2.025v-1.756c0-0.211-0.172-0.383-0.383-0.383H2.724V7.51h5.361v2.68c0,0.21,0.172,0.382,0.383,0.382h2.68V12.87z M17.276,9.807h-1.533c-0.211,0-0.383,0.172-0.383,0.383v1.755L13.356,9.92c-0.07-0.073-0.169-0.113-0.27-0.113H8.851v-5.36h8.425V9.807z' transform='translate(4,4.5)'/></svg>"); 
+  background-repeat: no-repeat;                                                                                             
+  background-color: var(--button-fill);
+}
+
+.vfrc-chat-input textarea:focus {
+  background-image: none;
+}
+
+/* Sørg for at textarea har passende høyde for vertikal sentrering */
+.vfrc-chat-input textarea,
+.vfrc-chat-input textarea:not(:placeholder-shown),
+.vfrc-chat-input--button {
+  line-height: 18px; /* Juster linjehøyden for vertikal sentrering */
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--button-fill);
+}
+
+.vfrc-chat-input textarea:focus {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* Knappetekster og posisjon */
+
+.vfrc-prompt button.vfrc-button--primary,
+footer button.vfrc-button--primary {
+    position: relative;
+    color: transparent !important;
+}
+
+.vfrc-prompt button.vfrc-button--primary::after,
+footer button.vfrc-button--primary::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    color: #ffffff;
+    border-radius: 7.5px;
+    background-color: #153e98;
+    content: "Start ny samtale";
+}
+
+.vfrc-prompt button.vfrc-button--primary[label="End Chat"]::after,
+footer button.vfrc-button--primary[label="End Chat"]::after {
+    content: "Avslutt samtale";
+}
+
+.vfrc-prompt button.vfrc-button--primary[label=Cancel]::after,
+footer button.vfrc-button--primary[label=Cancel]::after {
+    content: "Avbryt";
+    color: var(--text-color-secondary);
+    background-color: var(--background-color-light);
+}
+
+/* Proactive messages */
+
+.vfrc-proactive-message {
+  background-color: var(--background-color-white);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px; 
+  border-bottom-right-radius: 0px;
+  font-weight: 500;
+  font-size: 14.5px;
+}
+
+.vfrc-proactive .vfrc-proactive-close { 
+  opacity: 1;
+  transform: translateY(15px);
+  height: 24px;
+  width: 24px;
+}
+
+.vfrc-proactive-close:hover {
+  border: 0.5px solid var(--border-color-light);
+  background-color: var(--button-fill);
+}
+
+.vfrc-launcher {
+  background: linear-gradient(#FAE053, #F9423A);
+  border: none;
+}
+
+.vfrc-launcher:hover {
+  background: linear-gradient(#d6c047, #8f1f19);
+  border: none;
+}
+
+
