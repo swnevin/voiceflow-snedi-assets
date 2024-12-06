@@ -224,13 +224,13 @@ footer button.vfrc-button--primary[label=Cancel]::after {
 .vfrc-launcher {
   background: linear-gradient(90deg, #FAE053, #F9423A);
   border: none;
-  bottom: clamp(32px, calc(60px - (100vh - 100%)), 60px);
+  bottom: 60px;
 }
 
 .vfrc-launcher:hover {
   background: linear-gradient(90deg,#d6c047, #8f1f19);
   border: none;
-  bottom: clamp(32px, calc(60px - (100vh - 100%)), 60px);
+  bottom: 60px;
 }
 
 
