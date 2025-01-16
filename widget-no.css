@@ -221,3 +221,32 @@ footer button.vfrc-button--primary[label=Cancel]::after {
   border: 0.5px solid var(--border-color-light);
   background-color: var(--button-fill);
 }
+
+.vfrc-launcher img{
+  display: none;
+  opacity: 0;
+}
+
+.vfrc-launcher {
+  position: relative; /* Ensures the pseudo-element is positioned relative to this element */
+  background: url('https://i.postimg.cc/Yqh1WBZv/mascot-rgb-06.webp') no-repeat center center;
+  background-size: cover;
+  border: none;
+}
+
+.vfrc-launcher:hover::before {
+  content: ""; /* Required for pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2); /* Slight grey overlay (adjust opacity as needed) */
+  border-radius: inherit; /* Matches any border-radius on the button */
+  pointer-events: none; /* Ensures the overlay does not interfere with hover events */
+}
+
+.vfrc-launcher:hover {
+  background: url('https://i.postimg.cc/Yqh1WBZv/mascot-rgb-06.webp') no-repeat center center;
+  background-size: cover;
+}
